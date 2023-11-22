@@ -25,8 +25,8 @@ public class AbstractEntity {
             name = "acc_id_seq",
             type = StringSequenceIdGenerator.class,
             parameters = {
-                    @Parameter(name = StringSequenceIdGenerator.INCREMENT_PARAM, value = "50"),
-                    @Parameter(name = StringSequenceIdGenerator.VALUE_PREFIX_PARAMETER, value = "B_"),
+                    @Parameter(name = StringSequenceIdGenerator.INCREMENT_PARAM, value = "10"),
+                    @Parameter(name = StringSequenceIdGenerator.VALUE_PREFIX_PARAMETER, value = "U_"),
                     @Parameter(name = StringSequenceIdGenerator.NUMBER_FORMAT_PARAMETER, value = "%05d") })
     private String id;
     private String universityName;
