@@ -2,9 +2,8 @@ package service;
 
 import dao.CourseDaoImpl;
 import model.Course;
-
 import java.sql.SQLException;
-import java.util.List;
+
 
 
 public class CourseService {
