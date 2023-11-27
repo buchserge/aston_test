@@ -4,13 +4,14 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import ru.spring.hw5.model.Professor;
-import ru.spring.hw5.service.ProfessorServiceImpl;
+import ru.spring.hw5.service.ProfessorService;
+
 
 @RestController
 @RequiredArgsConstructor
 public class ProfessorController {
 
-    private ProfessorServiceImpl professorService;
+    private ProfessorService professorService;
 
 
     @PostMapping("/professor")

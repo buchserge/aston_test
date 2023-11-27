@@ -5,14 +5,14 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import ru.spring.hw5.model.Student;
-import ru.spring.hw5.service.StudentServiceImpl;
+import ru.spring.hw5.service.StudentService;
 import ru.spring.hw5.util.CourseViews;
 
 @RestController
 @RequiredArgsConstructor
 public class StudentController {
 
-    private final StudentServiceImpl studentService;
+    private final StudentService studentService;
 
     @PostMapping("/student")
     @ResponseStatus(HttpStatus.CREATED)
