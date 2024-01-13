@@ -30,6 +30,8 @@ public class AbstractEntity {
                     @Parameter(name = StringSequenceIdGenerator.VALUE_PREFIX_PARAMETER, value = "U_"),
                     @Parameter(name = StringSequenceIdGenerator.NUMBER_FORMAT_PARAMETER, value = "%05d") })
     private String id;
+
     @JsonView(CourseViews.StudentAndProfessorView.class)
+    @MustStartWithCapitalLetter
     private String universityName;
 }

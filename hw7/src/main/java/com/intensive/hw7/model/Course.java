@@ -17,6 +17,7 @@ import java.util.Set;
 public class Course extends AbstractEntity {
 
     @JsonView(CourseViews.CourseView.class)
+    @MustStartWithCapitalLetter
     private String title;
 
     @JsonView(CourseViews.CourseView.class)

@@ -16,6 +16,7 @@ import java.util.Set;
 public class Student extends AbstractEntity {
 
     @JsonView(CourseViews.StudentAndProfessorView.class)
+    @MustStartWithCapitalLetter
     private String name;
 
     @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
